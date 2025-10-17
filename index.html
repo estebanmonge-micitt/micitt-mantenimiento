@@ -4,13 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MICITT - Sitio en Mantenimiento</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
   <style>
     :root{
       --azul:#003366; --azul-claro:#009fe3; --gris:#444; --fondo:#f2f6fa;
     }
     *{box-sizing:border-box}
-    body{margin:0; font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", sans-serif;
-         background:var(--fondo); color:var(--azul); display:flex; min-height:100svh}
+    body{
+      margin:0;
+      font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", sans-serif;
+      background:var(--fondo);
+      color:var(--azul);
+      display:flex;
+      min-height:100svh;
+      flex-direction:column;
+    }
+    header{
+      background:#002855;
+      text-align:center;
+      padding:14px 10px;
+      border-bottom:4px solid #d3b46f;
+    }
+    header img{
+      max-width:420px;
+      width:100%;
+      height:auto;
+    }
     .wrap{margin:auto; width:min(760px, 92%); text-align:center}
     .logo{display:inline-flex; align-items:center; gap:14px; margin-bottom:16px}
     .badge{width:64px; height:64px}
@@ -22,12 +44,19 @@
   </style>
 </head>
 <body>
+
+  <!-- Encabezado con el logo institucional -->
+  <header>
+    <img src="logo-micitt.png" alt="Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones - Gobierno de Costa Rica">
+  </header>
+
   <main class="wrap">
     <div class="panel">
       <div class="logo" aria-label="MICITT">
         <!-- Triángulo amarillo con esquinas redondeadas y signo de exclamación -->
         <svg class="badge" viewBox="0 0 64 64" role="img" aria-label="Advertencia mantenimiento">
-          <path d="M32 8 Q33 8 34 9 L59 55 Q60 57 59 59 Q58 61 56 61 H8 Q6 61 5 59 Q4 57 5 55 L30 9 Q31 8 32 8 Z" fill="#ffcc00" stroke="#e0b000" stroke-width="3"/>
+          <path d="M32 8 Q33 8 34 9 L59 55 Q60 57 59 59 Q58 61 56 61 H8 Q6 61 5 59 Q4 57 5 55 L30 9 Q31 8 32 8 Z"
+                fill="#ffcc00" stroke="#e0b000" stroke-width="3"/>
           <line x1="32" y1="22" x2="32" y2="38" stroke="#333" stroke-width="4" stroke-linecap="round"/>
           <circle cx="32" cy="47" r="3" fill="#333"/>
         </svg>
@@ -44,10 +73,12 @@
       <p>Gracias por su comprensión.</p>
 
       <div class="hr"></div>
-      
+
+      <div class="foot">
+        &copy; 2025 Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones · Gobierno de Costa Rica
+      </div>
     </div>
   </main>
+
 </body>
 </html>
-
-
