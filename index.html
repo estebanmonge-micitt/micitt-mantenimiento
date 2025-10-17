@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MICITT - Sitio en Mantenimiento</title>
+  <style>
+    :root{
+      --azul:#003366; --azul-claro:#009fe3; --gris:#444; --fondo:#f2f6fa;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", sans-serif;
+         background:var(--fondo); color:var(--azul); display:flex; min-height:100svh}
+    .wrap{margin:auto; width:min(760px, 92%); text-align:center}
+    .logo{display:inline-flex; align-items:center; gap:14px; margin-bottom:16px}
+    .badge{width:64px; height:64px}
+    h1{margin:0 0 10px; font-size:clamp(22px, 3.5vw, 32px); color:#002855}
+    p{margin:6px 0; color:var(--gris); font-size:clamp(14px, 2.4vw, 18px)}
+    .panel{background:#fff; border-radius:18px; padding:28px 20px; box-shadow:0 10px 30px rgba(0,0,0,.06)}
+    .hr{height:1px; background:linear-gradient(90deg, transparent, #cfe6f6, transparent); margin:18px 0}
+    .foot{margin-top:14px; font-size:13px; color:#6b7280}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="panel">
+      <div class="logo" aria-label="MICITT">
+        <!-- Triángulo amarillo con esquinas redondeadas y signo de exclamación -->
+        <svg class="badge" viewBox="0 0 64 64" role="img" aria-label="Advertencia mantenimiento">
+          <path d="M32 8 Q33 8 34 9 L59 55 Q60 57 59 59 Q58 61 56 61 H8 Q6 61 5 59 Q4 57 5 55 L30 9 Q31 8 32 8 Z" fill="#ffcc00" stroke="#e0b000" stroke-width="3"/>
+          <line x1="32" y1="22" x2="32" y2="38" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="32" cy="47" r="3" fill="#333"/>
+        </svg>
+        <div style="text-align:left">
+          <div style="font-weight:700; letter-spacing:.3px;">MICITT</div>
+          <div style="font-size:12px; color:#426488; line-height:1.2">
+            Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones
+          </div>
+        </div>
+      </div>
+
+      <h1>Sitio temporalmente en mantenimiento</h1>
+      <p>Estamos realizando trabajos programados en nuestra infraestructura.</p>
+      <p>Volveremos en breve. Gracias por su comprensión.</p>
+
+      <div class="hr"></div>
+      <p class="foot">Si necesitás asistencia, contactá a la Mesa de Servicios.</p>
+    </div>
+  </main>
+</body>
+</html>
